@@ -1,2 +1,3 @@
 # POO-Typescript
-Rep of exemples
+
+Exemplos e treinos com POO e Typescript
