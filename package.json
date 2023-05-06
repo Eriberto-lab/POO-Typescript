@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
     "start": "node build/index.js",
-    "dev": "ts-node-dev --ignore-watch node_modules src/herancaAndComposicao.ts"
+    "dev": "ts-node-dev --ignore-watch node_modules src/exercicios/superClass.ts"
   },
   "repository": {
     "type": "git",
