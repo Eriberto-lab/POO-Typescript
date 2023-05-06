@@ -1,5 +1,9 @@
 class Superclass {
-    isSuper = true;
+    isSuper: boolean;
+
+    constructor() {
+        this.isSuper = true;
+    }
 
     sayHello() {
         console.log('Olá mundo!');
@@ -8,6 +12,11 @@ class Superclass {
 };
 
 class Subclass  extends Superclass{
+    
+    constructor() {
+        super();
+        this.isSuper = false;
+    }
 
 } // subclass vazia porém tem o metodo sayHello da superclass
 
@@ -17,6 +26,8 @@ const subObj = new Subclass();
 const myFunc = (obj: Superclass) => {
     
     obj.sayHello()
+
+    console.log(obj.isSuper ? 'Super!' : 'Sub')
 };
 
 myFunc(superObj)

@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
     "start": "node build/index.js",
-    "dev": "ts-node-dev --ignore-watch node_modules src/exercicios/superClass.ts"
+    "dev": "ts-node-dev --ignore-watch node_modules src/exercicios/myInterface.ts"
   },
   "repository": {
     "type": "git",

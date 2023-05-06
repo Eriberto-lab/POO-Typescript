@@ -19,7 +19,7 @@ class Animal {
       Obs: Usando essa sintaxe é necessário indicar explicitamente 
       logo antes do nome do atributo se ele é public, private, protected ou readonly
     */
-    constructor(public name: string, private birthDate: Date) { }
+    constructor(public name: string, protected birthDate: Date) { }
   
     get age() {
       /*Para operar com datas, vamos operar somente com milissegundos. Uma data
@@ -62,9 +62,14 @@ class Animal {
     fly() {
         console.log(`${this.name} está voando alto!`)
     }
+
+    showBirthDate() {
+        console.log(this.birthDate)
+    }
   } // cria class Bird que herda os atributos name e age da classe Animal.
 
   const parrot = new Bird('Eri', new Date(Date.parse('jun 07, 2023')))// cria um objeto Bird e passa os argumentos que a classe Animal espera receber.
 
   console.log(parrot.age)
   parrot.fly()
+  parrot.showBirthDate()
